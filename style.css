@@ -1,0 +1,54 @@
+:root{
+  /*variables colors*/
+  --bg-color-light: #CDDAB2;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4{
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main{
+  flex: 1 0 auto;
+}
+.cross-center{
+  align-items: center;
+}
+
+/* 768px */
+@media screen and (min-width: 768px){
+  :root{
+    font-size: 18px;
+  }
+}
