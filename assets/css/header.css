@@ -1,12 +1,14 @@
 .header {
+  height: 91px;
   padding: 1.7rem 0;
   background-color: #f5efeb;
   color: #1a3923;
 }
 .logo {
   text-transform: lowercase;
+  line-height: 1.1rem;
 }
-.logo > span {
+.logo > b {
   display: block;
   font-weight: 700;
 }
@@ -16,10 +18,12 @@
 }
 .burger {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  /* A little bit more then in figma layout becouse it's uncorrect value in figma if you zoom in it */
+  width: 23px;
+  height: 23px;
   background-image: url(./../icons/menu.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
 }
 .main-menu{
@@ -28,7 +32,6 @@
   background-color: #fff;
   position: absolute;
   right: 0;
-  top: 10px;
   text-align: left;
   font-size: 14px;
 }
@@ -36,7 +39,7 @@
   display: block;
 }
 .main-menu-item:not(:last-child){
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid rgb(196, 196, 196);
 }
 .main-menu-link{
   display: inline-block;
@@ -50,7 +53,7 @@
   margin-right: 4px;
 }
 .main-menu-link:hover::before{
-  background-color: #8B8C4A;
+  background-color: rgb(139, 140, 74);
 }
 
 @media screen and (min-width: 768px) {

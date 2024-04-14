@@ -1,29 +1,41 @@
 :root {
+  --layout-min-width: 375px;
+  --layout-max-width: 940px;
+  --container-padding-size: 1.31rem;
+  /* Default gap like in browsers */
   --gap-size: 1rem;
   --col-amount: 12;
+  /* From Bootstrap standard layout */
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: 940px;
-  --bs-breakpoint-xl: 1200px;
-  --bs-breakpoint-xxl: 1400px;
+  --bs-breakpoint-lg: var(--layout-max-width);     /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
+  --bs-breakpoint-xl: 1200px;   
+  --bs-breakpoint-xxl: 1400px;   
 }
 .container {
-  --padding-size: calc(var(--gap-size) / 2);
+  /* Padding from left and from right in main container with content */
+  --padding-size: calc(var(--gap-size) / 2); 
 
   width: 100%;
-  min-width: 375px;
-  padding-left: var(--padding-size);
-  padding-right: var(--padding-size);
+  /* From our mobile figma layout */
+  min-width: var(--layout-min-width); 
+  /* Left-right container paddings for our mobile-first figma layout*/
+  padding-left: var(--container-padding-size);
+  padding-right: var(--container-padding-size);
   margin: auto;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
+  /* В испекторе не очевидный отступ и меню не от туда начинаем, можно убрать и попправить меню ?????????????????????????????????????????????????????????*/
+  /* Remove left gap from first row element */
   margin-left: calc(var(--padding-size) * -1);
+  /* Remove right gap from last row element */
   margin-right: calc(var(--padding-size) * -1);
 }
 .row > * {
+  /* Gaps */
   padding-left: var(--padding-size);
   padding-right: var(--padding-size);
 }
@@ -85,6 +97,10 @@
   display: block;
 }
 
+/* Media Section */
+
+/* We need it ????????????????????????????????????????????????????????? */
+/* Why we need col-sm-* col-md-* e.t.c. if we have SAME (!!!) col-* already ????????????????????????????????????????????????????????? */
 @media screen and (min-width: 576px){
   .container{
     max-width: var(--bs-breakpoint-sm);
@@ -137,8 +153,9 @@
   .col-sm-10,
   .col-sm-11,
   .col-sm-12{
+    /* --size variable is declared locally in every class by prev selector and different for every selector, so we just use that variable to set width */
     flex-basis: var(--size);
-    max-width: var(--size);
+    max-width: var(--size); /* ???????????????????????????????????????? */
   }
   .hidden-sm{
     display: none;
@@ -148,6 +165,7 @@
   }
 }
 
+/* We need it ????????????????????????????????????????????????????????? */
 @media screen and (min-width: 768px){
   .container{
     max-width: var(--bs-breakpoint-md);
@@ -211,7 +229,9 @@
   }
 }
 
+/* Try to input variable here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media screen and (min-width: 992px){
+  /* Limit max-width of container */
   .container{
     max-width: var(--bs-breakpoint-lg);
   }
