@@ -3,8 +3,10 @@
 :root{
   /* Variables colors */
   --default-sections-color: rgb(245, 239, 235);
-  --bg-color-green-light: #CDDAB2;
+  --bg-color-green-light: rgb(205, 218, 178);
+  --bg-color-green-middle: rgb(49, 83, 59);
 
+  color: var(--bg-color-green-middle);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -14,7 +16,8 @@ h1,
 h2,
 h3{
   font-family: "Yeseva One", serif;
-  font-weight: 400;
+  /* Это ж вроде с гугла взято и у неё это есть и работает, а мне ток мешает, почему ?????????????????????????????????????????????????????????*/
+  /* font-weight: 400; */
   font-style: normal;
 }
 h1,
@@ -28,9 +31,6 @@ h2{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-.one-hundred-procent-height{
-  height: 100%;
 }
 .main{
   flex: 1 0 auto;

@@ -1,5 +1,5 @@
 .welcome {
-  background-color: var(--bg-color-light);
+  background-color: var(--bg-color-green-light);
 }
 .welcome-content{
   display: flex;
@@ -7,15 +7,16 @@
   justify-content: center;
 }
 .welcome-heading {
-  margin: 0;
   font-size: 2.87rem;
 }
 .welcome-text {
+  /* Отрицательный марджин ставить ??????????????????????????????? */
   margin-top: 0;
   font-size: 0.75rem;
 }
 .photo {
   display: block;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px){
