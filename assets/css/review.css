@@ -4,7 +4,53 @@
 .review * {
   font-size: 0.88rem;
 }
+.review-container{
+  position: relative;
+}
+.review-comma-decoration {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-grow: 0;
+  background-image: url(./../icons/comma.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  position: absolute;
+  top: calc((var(--section-vertical-padding) * -1));
+  transform: translateY(-25%);
+}
+.review-row {
+  align-items: center;
+}
+.review-arrow-left {
+  display: inline-block;
+  width: 8.96px;
+  height: 19.04px;
+  flex-grow: 0;
+  margin: auto;
+  background-image: url(./../icons/review-arror-left.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* background-size: cover; */
+  cursor: pointer;
+}
+.review-arrow-right {
+  display: inline-block;
+  width: 0.56rem;
+  height: 1.19rem;
+  background-image: url(./../icons/review-arror-right.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* background-size: cover; */
+  cursor: pointer;
+}
+.review-text > p:last-child {
+  padding-bottom: 1.625rem;
+}
 .review-author {
+  display: block;
+  /* width: 100%; */
   padding-top: 1.19rem;
   text-align: right;
 }

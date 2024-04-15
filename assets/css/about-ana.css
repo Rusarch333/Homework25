@@ -1,0 +1,9 @@
+.about-ana {
+  background-color: var(--color-green);
+}
+.about-ana-header {
+  margin-bottom: 1.75rem;
+}
+.about-ana-text {
+  color: var(--color-green-light);
+}
