@@ -10,6 +10,7 @@
   height: 24px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .email {
   background-image: url(./../icons/email.svg);

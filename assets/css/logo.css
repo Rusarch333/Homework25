@@ -1,0 +1,8 @@
+.logo {
+  text-transform: lowercase;
+  line-height: 1.1rem;
+}
+.logo > b {
+  display: block;
+  font-weight: 700;
+}

@@ -1,4 +1,13 @@
+footer{
+  padding: 2.75rem 0;
+}
+.footer-contact-menu-link {
+  width: 30px;
+  height: 30px;
+}
 .copyright{
+  padding-top: 1.625rem;
   color: var(--color-green);
   font-size: 0.63rem;
+  font-weight: 400;
 }

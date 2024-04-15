@@ -1,6 +1,10 @@
 .review {
   background-color: var(--color-green-light);
 }
-.review-author{
+.review * {
+  font-size: 0.88rem;
+}
+.review-author {
+  padding-top: 1.19rem;
   text-align: right;
 }

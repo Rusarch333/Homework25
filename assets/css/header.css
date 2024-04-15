@@ -3,14 +3,6 @@
   background-color: var(--default-section-color);
   color: 0E2715;
 }
-.logo {
-  text-transform: lowercase;
-  line-height: 1.1rem;
-}
-.logo > b {
-  display: block;
-  font-weight: 700;
-}
 .page-nav {
   position: relative;
   text-align: right;
