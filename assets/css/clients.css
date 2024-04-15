@@ -1,0 +1,27 @@
+.clients-header {
+  margin-bottom: 0.8rem;
+}
+.clients-text {
+  margin-bottom: 2.8rem;
+}
+.clients-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.client {
+  width: 70px;
+  margin-right: 2.5rem;
+}
+.client-icon {
+  display: inline-block;
+  width: 4.38rem;
+  height: 4.38rem;
+  background-image: url(./../icons/circle.svg);
+  background-repeat: no-repeat;
+}
+.client-caption {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: bold;
+}
