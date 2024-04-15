@@ -1,5 +1,13 @@
 .about-ana {
+  position: relative;
   background-color: var(--color-green);
+}
+.about-ana-image {
+  width: 124px;
+  height: 156px;
+  position: absolute;
+  top: -3.75rem;
+  right: 2.5rem;
 }
 .about-ana-header {
   margin-bottom: 1.75rem;
