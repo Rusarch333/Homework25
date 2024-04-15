@@ -1,22 +1,58 @@
 .services {
+  
 }
 .services-section-heading {
 }
 .service {
+  padding: 2.8rem 1.19rem;
+  margin-bottom: 1.25rem;
+  background-color: var(--color-green);
 }
 .service-heading {
 }
+.service-heading-tip {
+}
 .service-description {
+  color: var(--color-green-light);
 }
 .service-dropdown-style-button {
+  display: block;
+  width: 100%;
+  padding: 0.81rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-green-yellow);
+  font-weight: bold;
+  text-align: left;
 }
-.service-check-button {
-}
-.service-check-button-icon {
-}
+/* Исправить код ниже чтобы заработал и где-то еще лест чайлд писал
+в другом коде. там наверное лест оф тайп тоже! */
+/* .service > .service-dropdown-style-button:last-of-type{
+  margin-bottom: 1.25rem;
+} */
+/* ОПТИМИЗАЦИЯ, ОСОБЕННО ПОХОЖИХ КНОПОК НИЖЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .service-portfolio-button {
+  display: block;
+  width: 85%;
+  padding: 1rem 0;
+  border: 2px solid var(--color-orange);
+  margin: auto;
+  color: #fff;
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .service-portfolio-button-icon {
 }
-.service-heading-tip {
+.service-check-button {
+  display: block;
+  width: 85%;
+  padding: 1rem 0;
+  margin: 0.38rem auto;
+  color: #fff;
+  background-color: var(--color-orange);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.service-check-button-icon {
+
 }
