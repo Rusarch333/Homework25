@@ -1,0 +1,6 @@
+.review {
+  background-color: var(--color-green-light);
+}
+.review-author{
+  text-align: right;
+}

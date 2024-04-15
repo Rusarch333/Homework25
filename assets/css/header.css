@@ -1,6 +1,6 @@
 .header {
   padding: 1.7rem 0;
-  background-color: #f5efeb;
+  background-color: var(--default-section-color);
   color: 0E2715;
 }
 .logo {
@@ -38,7 +38,7 @@
   display: block;
 }
 .main-menu-item:not(:last-child){
-  border-bottom: 1px solid rgb(196, 196, 196);
+  border-bottom: 1px solid #c4c4c4;
 }
 .main-menu-link{
   display: inline-block;
@@ -52,7 +52,7 @@
   margin-right: 4px;
 }
 .main-menu-link:hover::before{
-  background-color: rgb(139, 140, 74);
+  background-color: #8b8c4a;
 }
 
 @media screen and (min-width: 768px) {

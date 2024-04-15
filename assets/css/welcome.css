@@ -1,5 +1,5 @@
 .welcome {
-  background-color: var(--bg-color-green-light);
+  background-color: var(--color-green-light);
 }
 .welcome-content{
   display: flex;

@@ -1,17 +1,20 @@
-/* General Section */
-
 :root{
   /* Variables colors */
-  --default-sections-color: rgb(245, 239, 235);
-  --bg-color-green-light: rgb(205, 218, 178);
-  --bg-color-green-middle: rgb(49, 83, 59);
+  --default-section-color: #f5efeb;
+  --color-green-superdark: #0E2715;
+  --color-green-dark: #1A3923;
+  --color-green: #31533b;
+  --color-green-light: #cddab2;
 
-  color: var(--bg-color-green-middle);
+  color: var(--color-green);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
 }
+
+/* General Tags Section */
+
 h1,
 h2,
 h3{
@@ -22,7 +25,19 @@ h3{
 }
 h1,
 h2{
-  color: rgb(14, 39, 21);
+  color: #0e2715;
+}
+
+/* General Classes Section */
+
+.cross-center{
+  align-items: center;
+}
+.text-align-center{
+  text-align: center;
+}
+.color-green{
+  color: var(--color-green);
 }
 
 /* Local Section */
@@ -34,9 +49,6 @@ h2{
 }
 .main{
   flex: 1 0 auto;
-}
-.cross-center{
-  align-items: center;
 }
 
 /* Media Section */
