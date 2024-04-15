@@ -1,3 +1,44 @@
 .recommendations{
+  --image-size: 100px;
+  --image-margin-right: 0.81rem;
   background-color: var(--color-green-yellow);
+}
+.recommendation {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.recommendation-image {
+  display: block;
+  width: var(--image-size);
+  height: var(--image-size);
+  border: 2px solid #000;
+  background-color: #DCDCDC;
+}
+.recommendation-container{
+  display: inline-block;
+  width: calc(100% - var(--image-size) - var(--image-margin-right));
+}
+.recommendation-text {
+  display: block;
+  margin-bottom: 0.44rem;
+  font-size: 1.13rem;
+}
+.recommendation-button {
+  display: block;
+  width: 147px;
+  height: 37px;
+  color: #fff;
+  background-color: var(--color-orange);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+}
+.recommendation-button-cursor-icon {
+  display: inline-block;
+  width: 0.84rem;
+  height: 0.84rem;
+  margin-right: 0.47rem;
+  background-image: url(./../icons/cursor.svg);
+  background-repeat: no-repeat;
 }
