@@ -1,7 +1,7 @@
 .header {
-  padding: 1.7rem 0;
+  padding: 1.63rem 0;
   background-color: var(--default-section-color);
-  color: 0E2715;
+  color: #0E2715;
 }
 .page-nav {
   position: relative;
@@ -24,7 +24,7 @@
   position: absolute;
   right: 0;
   text-align: left;
-  font-size: 14px;
+  font-size: 0.88rem;
 }
 .page-nav:hover>.main-menu{
   display: block;
@@ -41,7 +41,7 @@
   display: inline-block;
   width: 3px;
   height: 10px;
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 .main-menu-link:hover::before{
   background-color: #8b8c4a;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 768px) {
   .header{
-    padding: 0;
+    padding: 1.22rem;
   }
   .burger {
     display: none;
@@ -58,9 +58,10 @@
     width: 100%;
     padding: 0;
     background-color: transparent;
-    position: static;
+    font-size: 1.1rem;
     text-align: right;
-    font-size: 20px;
+    /* Возвращаем position назад */
+    position: static; 
   }
   .main-menu-item{
     display: inline-block;
