@@ -17,8 +17,7 @@
   cursor: pointer;
 
   position: absolute;
-  top: calc((var(--section-vertical-padding) * -1));
-  transform: translateY(-25%);
+  top: -87px;
 }
 .review-row {
   align-items: center;
