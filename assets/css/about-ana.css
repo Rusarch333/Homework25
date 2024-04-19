@@ -10,8 +10,9 @@
   right: 2.5rem;
 }
 .about-ana-header {
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.69rem;
 }
 .about-ana-text {
+  margin: 0;
   color: var(--color-green-light);
 }
