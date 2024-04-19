@@ -30,14 +30,21 @@
   flex-wrap: wrap;
   /* В испекторе не очевидный отступ и меню не от туда начинаем, можно убрать и попправить меню ?????????????????????????????????????????????????????????*/
   /* Remove left gap from first row element */
-  margin-left: calc(var(--padding-size) * -1);
+  /* margin-left: calc(var(--padding-size) * -1); */
   /* Remove right gap from last row element */
-  margin-right: calc(var(--padding-size) * -1);
+  /* margin-right: calc(var(--padding-size) * -1); */
 }
 .row > * {
   /* Gaps */
   padding-left: var(--padding-size);
   padding-right: var(--padding-size);
+}
+/* Можно так вместо марджинов????? Так гораздо лучше! */
+.row > *:first-child {
+  padding-left: 0;
+}
+.row > *:last-child {
+  padding-right: 0;
 }
 .col-1{
   --size: calc(100% / var(--col-amount) * 1); /*8.33%*/

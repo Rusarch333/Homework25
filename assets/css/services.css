@@ -1,5 +1,5 @@
 .services {
-  
+  color: var(--color-green-light);
 }
 .services-section-heading {
 }
@@ -11,18 +11,34 @@
 .service-heading {
 }
 .service-heading-tip {
+  margin: -0.94rem 0 0.69rem;
+  font-size: 14px;
 }
 .service-description {
-  color: var(--color-green-light);
+  margin: 0;
+}
+.service-dropdown-style-button:first-of-type {
+  margin-top: 1.25rem;
 }
 .service-dropdown-style-button {
   display: block;
   width: 100%;
-  padding: 0.81rem 1rem;
+  height: 57px;
+  padding: 0 1rem;
+  border: 1px solid #fff;
   margin-bottom: 0.5rem;
   background-color: var(--color-green-yellow);
   font-weight: bold;
   text-align: left;
+  position: relative;
+}
+.service-dropdown-style-button::after {
+  content: url(./../icons/arrow-down.svg);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0.81rem;
+  transform: translateY(-50%);
 }
 /* Исправить код ниже чтобы заработал и где-то еще лест чайлд писал
 в другом коде. там наверное лест оф тайп тоже! */
@@ -32,27 +48,39 @@
 /* ОПТИМИЗАЦИЯ, ОСОБЕННО ПОХОЖИХ КНОПОК НИЖЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .service-portfolio-button {
   display: block;
-  width: 85%;
-  padding: 1rem 0;
+  width: 90%;
+  height: 45px;
   border: 2px solid var(--color-orange);
-  margin: auto;
+  margin: 1.25rem auto 0;
   color: #fff;
   background-color: transparent;
   font-weight: bold;
   text-transform: uppercase;
 }
-.service-portfolio-button-icon {
+.service-portfolio-button:before {
+  content: url(./../icons/behance.svg);
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.44rem;
+  vertical-align:bottom;
 }
 .service-check-button {
   display: block;
-  width: 85%;
-  padding: 1rem 0;
-  margin: 0.38rem auto;
+  width: 90%;
+  height: 45px;
+  border: 1px solid #000;
+  margin: 1.25rem auto;
   color: #fff;
   background-color: var(--color-orange);
   font-weight: bold;
   text-transform: uppercase;
 }
-.service-check-button-icon {
-
+.service-check-button:before {
+  content: url(./../icons/check.svg);
+  display: inline-block;
+  margin-right: 0.44rem;
+}
+.service-portfolio-button + .service-check-button {
+  margin-top: 0.5rem;
 }
