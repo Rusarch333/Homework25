@@ -1,7 +1,11 @@
 .recommendations{
   --image-size: 100px;
   --image-margin-right: 0.81rem;
+
   background-color: var(--color-green-yellow);
+}
+.recommendations-header{
+  color: var(--color-green-superdark);
 }
 .recommendation {
   display: inline-flex;

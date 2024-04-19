@@ -1,8 +1,16 @@
+.clients{
+  padding-bottom: 120px;
+}
 .clients-header {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1;
 }
 .clients-text {
+  margin-top: 0.16rem;
   margin-bottom: 2.8rem;
+  color: var(--color-green);
+  text-align: left;
 }
 .clients-container {
   display: inline-flex;
@@ -22,6 +30,8 @@
 }
 .client-caption {
   display: block;
-  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
   font-weight: bold;
+  text-align: center;
 }
