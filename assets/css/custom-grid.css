@@ -1,7 +1,7 @@
 :root {
   --layout-min-width: 375px;
   --layout-max-width: 940px;
-  --container-padding-size: 1.31rem;
+  --container-padding-size: 1rem;
   /* Default gap like in browsers */
   --gap-size: 1rem;
   --col-amount: 12;
