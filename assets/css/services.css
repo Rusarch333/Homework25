@@ -61,7 +61,7 @@
   text-transform: uppercase;
 }
 .service-portfolio-button:before {
-  content: url(./../icons/behance.svg);
+  content: url(./../icons/behance-white.svg);
   display: inline-block;
   width: 22px;
   height: 22px;

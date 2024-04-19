@@ -48,6 +48,9 @@ h3 {
 .cross-center {
   align-items: center;
 }
+.main-space-between {
+  justify-content: space-between;
+}
 .text-align-center {
   text-align: center;
 }

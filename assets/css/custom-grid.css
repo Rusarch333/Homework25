@@ -40,10 +40,10 @@
   padding-right: var(--padding-size);
 }
 /* Можно так вместо марджинов????? Так гораздо лучше! */
-.row > *:first-child {
+.row > :not(.hidden):first-child {
   padding-left: 0;
 }
-.row > *:last-child {
+.row > :last-child {
   padding-right: 0;
 }
 .col-1{

@@ -1,12 +1,15 @@
 footer{
   padding: 2.75rem 0;
 }
+.footer-logo{
+  padding-left: 0;
+}
 .footer-contact-menu-link {
   width: 30px;
   height: 30px;
 }
 .copyright{
-  padding-top: 1.63rem;
+  padding-top: 1.25rem;
   color: var(--color-green);
   font-size: 0.63rem;
   font-weight: 400;

@@ -7,16 +7,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 0;
   padding-bottom: 2.94rem;
 }
 .welcome-heading {
+  /* margin-top: 6rem; */
   font-size: 2.87rem;
 }
 .welcome-text {
-  margin-top: 0.25rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   /* Отрицательный марджин ставить ??????????????????????????????? */
-  margin-top: 0;
   color: var(--color-green);
   font-size: 0.75rem;
 }
