@@ -1,32 +1,34 @@
 .clients{
-  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
 }
 .clients-header {
   margin-bottom: 0;
   text-align: left;
-  line-height: 1;
 }
 .clients-text {
   margin-top: 0.16rem;
   margin-bottom: 2.8rem;
   color: var(--color-green);
+  font-size: 1.13rem;
+}
+.clients-header,
+.clients-text {
   text-align: left;
 }
-.clients-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.clients-row {
+  justify-content: space-between;
 }
 .client {
-  width: 70px;
+  width: 80px;
   margin-right: 2.5rem;
 }
 .client-icon {
   display: inline-block;
-  width: 4.38rem;
-  height: 4.38rem;
+  width: 70px;
+  height: 70px;
   background-image: url(./../icons/circle.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .client-caption {
   display: block;
@@ -34,4 +36,32 @@
   font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .clients{
+    padding-top: 6.67rem;
+    padding-bottom: 12.9rem;
+  }
+  .clients-header,
+  .clients-text {
+    text-align: center;
+  }
+  .clients-text {
+    font-size: 1.11rem;
+  }
+  .clients-row {
+    justify-content: center;
+  }
+  .client {
+    width: 140px;
+    margin-right: 2.22rem;
+  }
+  .client-icon {
+    width: 120px;
+    height: 120px;
+  }
+  .client-caption {
+    font-size: 0.78rem;
+  }
 }
