@@ -1,18 +1,49 @@
 .about-ana {
-  position: relative;
   background-color: var(--color-green);
+}
+/* Специально увеличил вес селектора */
+.about-ana .about-ana-content{
+  padding-right: 0;
+  position: relative;
+}
+.about-ana-header {
+  margin-bottom: 0.7rem;
+}
+.about-ana-text {
+  margin: 0;
+  color: var(--color-green-light);
 }
 .about-ana-image {
   width: 124px;
   height: 156px;
   position: absolute;
-  top: -3.75rem;
-  right: 2.5rem;
+  top: -130px;
+  right: 30px;
 }
-.about-ana-header {
-  margin-bottom: 0.69rem;
-}
-.about-ana-text {
-  margin: 0;
-  color: var(--color-green-light);
+
+@media screen and (min-width: 768px) {
+  .about-ana {
+    padding-bottom: calc(var(--section-vertical-padding) + 1.72rem);
+  }
+  .about-ana-container {
+    position: relative;
+  }
+  .about-ana .about-ana-content{
+    padding-right: 0;
+    position: static;
+  }
+  .about-ana-header {
+    font-size: 4.44rem;
+    line-height: 1;
+  }
+  .about-ana-text {
+    font-size: 1.11rem;
+  }
+  .about-ana-image {
+    width: 487px;
+    height: 730px;
+    top:auto;
+    bottom: -112px;
+    right: -107px;
+  }
 }

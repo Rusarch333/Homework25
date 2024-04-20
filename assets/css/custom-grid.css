@@ -43,7 +43,8 @@
 .row > :not(.hidden):first-child {
   padding-left: 0;
 }
-.row > :last-child {
+.row > :not(.hidden):only-child, 
+.row > :not(.hidden):last-child {
   padding-right: 0;
 }
 .col-1{
