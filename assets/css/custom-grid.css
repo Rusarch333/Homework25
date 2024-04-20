@@ -36,8 +36,10 @@
 }
 .row > * {
   /* Gaps */
-  padding-left: var(--padding-size);
-  padding-right: var(--padding-size);
+  /* padding-left: var(--padding-size);
+  padding-right: var(--padding-size); */
+  margin-left: 0;
+  margin-right: 0;
 }
 /* Можно так вместо марджинов????? Так гораздо лучше! */
 /* .row > :not(.hidden):first-child {
@@ -48,7 +50,7 @@
   padding-right: 0;
 } */
 .col-1{
-  --size: calc(100% / var(--col-amount) * 1); /*8.33%*/
+  --size: calc(100% / var(--col-amount) * 1 - var(--padding-size)); /*8.33%*/
 }
 .col-2{
   --size: calc(100% / var(--col-amount) * 2); /*16.66*/
@@ -63,7 +65,7 @@
   --size: calc(100% / var(--col-amount) * 5);
 }
 .col-6{
-  --size: calc(100% / var(--col-amount) * 6);
+  --size: calc(100% / var(--col-amount) * 6 - var(--padding-size)); /*8.33%*/
 }
 .col-7{
   --size: calc(100% / var(--col-amount) * 7);
@@ -112,6 +114,8 @@
 @media screen and (min-width: 576px){
   .container{
     max-width: var(--bs-breakpoint-sm);
+    padding-left: 0;
+    padding-right: 0;
   }
   .col-sm-1{
     --size: calc(100% / var(--col-amount) * 1); /*8.33%*/

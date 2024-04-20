@@ -86,3 +86,10 @@
 .service-portfolio-button + .service-check-button {
   margin-top: 0.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .service-heading-tip,
+  .service-dropdown-style-button {
+    font-size: 0.89rem;
+  }
+}
