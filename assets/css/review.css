@@ -20,9 +20,6 @@
   position: absolute;
   top: -86px;
 }
-.review-row {
-  align-items: center;
-}
 .review-arrow-left {
   display: inline-block;
   width: 10px;

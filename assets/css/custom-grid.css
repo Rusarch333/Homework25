@@ -38,8 +38,8 @@
 }
 .row > * {
   /* Gaps */
-  /* padding-left: var(--padding-size);
-  padding-right: var(--padding-size); */
+  padding-left: var(--padding-size);
+  padding-right: var(--padding-size);
   margin-left: 0;
   margin-right: 0;
 }
@@ -51,12 +51,6 @@
 .row > :not(.hidden):last-child {
   padding-right: 0;
 } */
-.cross-center {
-  align-items: center;
-}
-.main-space-between {
-  justify-content: space-between;
-}
 .col-1{
   --size: calc(100% / var(--col-amount) * 1 - var(--padding-size)); /*8.33%*/
 }
