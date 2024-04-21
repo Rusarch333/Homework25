@@ -1,6 +1,8 @@
 :root {
-  --layout-min-width: 375px;
-  --layout-max-width: 940px;
+  --layout-min-row-width: 375px;
+  --layout-max-row-width: 940px;
+  --layout-max-transition-width: 1440px; /* Где лучше применить ?????????????????? */ 
+
   --container-padding-size: 1rem;
   /* Default gap like in browsers */
   --gap-size: 1rem;
@@ -9,7 +11,7 @@
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: var(--layout-max-width);     /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
+  --bs-breakpoint-lg: var(--layout-max-row-width);     /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
   --bs-breakpoint-xl: 1200px;   
   --bs-breakpoint-xxl: 1400px;   
 }
@@ -19,7 +21,7 @@
 
   width: 100%;
   /* From our mobile figma layout */
-  min-width: var(--layout-min-width); 
+  min-width: var(--layout-min-row-width); 
   /* Left-right container paddings for our mobile-first figma layout*/
   padding-left: var(--container-padding-size);
   padding-right: var(--container-padding-size);
@@ -49,6 +51,12 @@
 .row > :not(.hidden):last-child {
   padding-right: 0;
 } */
+.cross-center {
+  align-items: center;
+}
+.main-space-between {
+  justify-content: space-between;
+}
 .col-1{
   --size: calc(100% / var(--col-amount) * 1 - var(--padding-size)); /*8.33%*/
 }
