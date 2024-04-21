@@ -7,7 +7,9 @@
 .recommendations-header{
   color: var(--color-green-superdark);
 }
-.recommendations-row {
+.recommendations-flexbox {
+  display: inline-flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 .recommendation {
@@ -52,13 +54,17 @@
   .recommendations{
     --recommendation-image-size: 120px;
   }
-  .recommendations-row {
+  .recommendations-flexbox {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .recommendation-picture {
+    --recommendation-image-size: 120px;
   }
   .recommendation-text {
     font-size: 1.11rem;
   }
-  .recommendation-picture {
-    --recommendation-image-size: 120px;
+  .recommendation {
+    margin-right: 3.33rem;
   }
 }
