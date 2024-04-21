@@ -20,20 +20,21 @@
 .service-description {
   margin: 0;
 }
-.service-dropdown-style-button:first-of-type {
-  margin-top: 1.25rem;
-}
 .service-dropdown-style-button {
   display: block;
   width: 100%;
   height: 57px;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 7.5rem;
   border-color: #fff;
   margin-bottom: 0.5rem;
   background-color: var(--color-green-yellow);
   font-weight: bold;
   text-align: left;
   position: relative;
+}
+.service-dropdown-style-button:first-of-type {
+  margin-top: 1.25rem;
 }
 .service-dropdown-style-button::after {
   content: url(./../icons/arrow-down.svg);
@@ -88,6 +89,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .service {
+    padding: 3.33rem 2.28rem;
+  }
+  .service:nth-of-type(3) {
+    padding-left: 4.44rem;
+    padding-right: 4.44rem;
+  }
   .service-heading-tip,
   .service-dropdown-style-button {
     font-size: 0.89rem;
