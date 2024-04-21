@@ -13,7 +13,7 @@
   margin: 0;
   color: var(--color-green-light);
 }
-.about-ana-image {
+.about-ana-picture {
   width: 124px;
   height: 156px;
   position: absolute;
@@ -39,7 +39,7 @@
   .about-ana-text {
     font-size: 1.11rem;
   }
-  .about-ana-image {
+  .about-ana-picture {
     width: 487px;
     height: 730px;
     top:auto;

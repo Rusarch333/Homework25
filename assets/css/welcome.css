@@ -21,9 +21,14 @@
   color: var(--color-green);
   font-size: 0.75rem;
 }
-.welcome-photo-ana {
+.welcome-ana-picture {
   display: block;
-  width: 100%;
+  width: 183px;
+  height: 302px;
+  
+}
+.welcome-photo-ana {
+  height: 100%;
 }
 
 @media screen and (min-width: 768px){
@@ -32,6 +37,10 @@
   }
   .welcome-text {
     font-size: 1.56rem;
+  }
+  .welcome-ana-picture {
+    width: 453px;
+    height: 603px;
   }
 }
 
