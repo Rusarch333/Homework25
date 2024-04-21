@@ -1,4 +1,6 @@
 .clients{
+  --client-image-size: 70px;
+
   padding-bottom: 7.5rem;
 }
 .clients-header {
@@ -15,24 +17,31 @@
 .clients-text {
   text-align: left;
 }
-.clients-row {
+.clients-content-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 290px;
+  margin: auto;
 }
 .client {
-  width: 80px;
   margin-right: 2.5rem;
 }
-.client-icon {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background-image: url(./../icons/circle.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+.client:nth-of-type(3n) {
+  margin-right: 0;
 }
+.client-picture,
 .client-caption {
   display: block;
-  margin-bottom: 1.25rem;
+  width: var(--client-image-size);
+}
+.client-picture {
+  height: var(--client-image-size);
+  margin: auto;
+  margin-bottom: 0.31rem;
+}
+.client-caption {
+  margin-bottom: 1.11rem;
   font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
@@ -40,6 +49,7 @@
 
 @media screen and (min-width: 768px) {
   .clients{
+    --client-image-size: 120px;
     padding-top: 6.67rem;
     padding-bottom: 12.9rem;
   }
@@ -47,19 +57,21 @@
   .clients-text {
     text-align: center;
   }
+  .clients-content-container {
+    width: auto;
+  }
   .clients-text {
     font-size: 1.11rem;
   }
-  .clients-row {
+  .clients-content-container {
     justify-content: center;
   }
-  .client {
-    width: 140px;
+  .client,
+  .client:nth-of-type(3n) {
     margin-right: 2.22rem;
   }
-  .client-icon {
-    width: 120px;
-    height: 120px;
+  .client-picture {
+    margin-bottom: 0.44rem;
   }
   .client-caption {
     font-size: 0.78rem;

@@ -1,6 +1,6 @@
 .recommendations{
-  --image-size: 100px;
-  --image-margin-right: 0.81rem;
+  --recommendation-image-size: 100px;
+  --recommendation-image-margin-right: 0.81rem;
 
   background-color: var(--color-green-yellow);
 }
@@ -16,18 +16,15 @@
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
-.recommendation-image {
-  display: block;
-  width: var(--image-size);
-  height: var(--image-size);
-  border: 2px solid #000;
-  background-color: #DCDCDC;
+.recommendation-picture {
+  width: var(--recommendation-image-size);
+  height: var(--recommendation-image-size);
 }
 .recommendation-container{
   /* display: inline-flex; */
   /* flex-direction: column; */
   /* justify-content: space-between; */
-  width: calc(100% - var(--image-size) - var(--image-margin-right));
+  width: calc(100% - var(--recommendation-image-size) - var(--recommendation-image-margin-right));
 }
 .recommendation-text {
   display: block;
@@ -53,12 +50,15 @@
 
 @media screen and (min-width: 768px) {
   .recommendations{
-    --image-size: 120px;
+    --recommendation-image-size: 120px;
   }
   .recommendations-row {
     flex-direction: row;
   }
   .recommendation-text {
     font-size: 1.11rem;
+  }
+  .recommendation-picture {
+    --recommendation-image-size: 120px;
   }
 }
