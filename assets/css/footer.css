@@ -1,5 +1,5 @@
 footer{
-  padding: 2.75rem 0;
+  padding: 2.5rem 0;
 }
 .footer-logo{
   padding-left: 0;
@@ -17,6 +17,7 @@ footer{
 
 @media screen and (min-width: 768px) {
   .footer-logo{
+    margin-left: 3.93rem;
     font-size: 1.78rem;
     line-height: 1.1;
   }
