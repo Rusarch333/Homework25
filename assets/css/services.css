@@ -90,6 +90,9 @@
 
 @media screen and (min-width: 768px) {
   .service {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 3.33rem 2.28rem;
   }
   .service:nth-of-type(3) {
@@ -99,5 +102,20 @@
   .service-heading-tip,
   .service-dropdown-style-button {
     font-size: 0.89rem;
+  }
+  .service-dropdown-style-button {
+    /* padding-right: 210px; */
+  }
+  .service-buttons-flexblock {
+    display: inline-flex;
+  }
+  .service-buttons-flexblock > * {
+    width: 45%;
+  }
+  .service-check-button {
+    height: 57px;
+  }
+  .service-portfolio-button + .service-check-button {
+    margin-top: 0;
   }
 }
