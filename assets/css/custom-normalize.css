@@ -30,4 +30,5 @@ button {
   /* border-width: 1px; */
   border: 1px solid black; /* Не все границы по-умолчанию стоят:*/
   font-size: inherit;
+  cursor: pointer;
 }
