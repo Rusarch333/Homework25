@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 1280px) {
   .review {
-    background-image: url(./../icons/leaf-right.png);
+    background-image: url(./../images-no-cach/leaf-right.png);
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 85%;

@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 1280px) {
   .welcome {
-    background-image: url(./../icons/leaf-left.png);
+    background-image: url(./../images-no-cach/leaf-left.png);
     background-repeat: no-repeat;
     background-position-y: 70px;
   }
