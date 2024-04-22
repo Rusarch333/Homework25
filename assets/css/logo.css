@@ -1,6 +1,6 @@
 .logo {
   text-transform: lowercase;
-  line-height: 1.1rem;
+  line-height: 1.1;
 }
 .logo > b {
   display: block;

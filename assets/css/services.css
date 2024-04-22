@@ -1,8 +1,6 @@
 .services {
   color: var(--color-green-light);
 }
-.services-section-heading {
-}
 .service {
   padding: 2.38rem 1.19rem;
   margin-bottom: 1.25rem;
@@ -11,11 +9,9 @@
 .service:last-of-type {
   margin-bottom: 0;
 }
-.service-heading {
-}
 .service-heading-tip {
   margin: -0.94rem 0 0.69rem;
-  font-size: 14px;
+  font-size: 0.88rem;
 }
 .service-description {
   margin: 0;
