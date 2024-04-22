@@ -11,9 +11,7 @@
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: var(
-    --layout-max-row-width
-  ); /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
+  --bs-breakpoint-lg: var(--layout-max-row-width); /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
 }
@@ -101,7 +99,7 @@
 .col-10,
 .col-11,
 .col-12 {
-  flex-basis: var(--size);
+  width: var(--size);
   max-width: var(--size);
 }
 .hidden {
@@ -170,7 +168,7 @@
   .col-sm-11,
   .col-sm-12 {
     /* --size variable is declared locally in every class by prev selector and different for every selector, so we just use that variable to set width */
-    flex-basis: var(--size);
+    width: var(--size);
     max-width: var(--size); /* ???????????????????????????????????????? */
   }
   .hidden-sm {
@@ -234,7 +232,7 @@
   .col-md-10,
   .col-md-11,
   .col-md-12 {
-    flex-basis: var(--size);
+    width: var(--size);
     max-width: var(--size);
   }
   .hidden-md {
