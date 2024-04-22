@@ -3,7 +3,7 @@
   padding-bottom: 0;
   background-color: var(--color-green-light);
 }
-.welcome-content{
+.welcome-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,14 +25,13 @@
   display: block;
   width: 183px;
   height: 302px;
-  
 }
 .welcome-photo-ana {
   height: 100%;
 }
 
-@media screen and (min-width: 768px){
-  .welcome-heading{
+@media screen and (min-width: 768px) {
+  .welcome-heading {
     font-size: 5.3rem;
   }
   .welcome-text {
@@ -53,7 +52,7 @@
   }
 } */
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
   .welcome {
     background-image: url(./../icons/leaf-left.png);
     background-repeat: no-repeat;

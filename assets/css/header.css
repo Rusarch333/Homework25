@@ -1,7 +1,7 @@
 .header {
   padding: 1.63rem 0;
   background-color: var(--default-section-color);
-  color: #0E2715;
+  color: #0e2715;
 }
 .page-nav {
   position: relative;
@@ -17,7 +17,7 @@
   background-size: cover;
   cursor: pointer;
 }
-.main-menu{
+.main-menu {
   width: 140px;
   padding: 19px 12px 18px;
   background-color: #fff;
@@ -26,50 +26,50 @@
   text-align: left;
   font-size: 0.88rem;
 }
-.page-nav:hover>.main-menu{
+.page-nav:hover > .main-menu {
   display: block;
 }
-.main-menu-item:not(:last-child){
+.main-menu-item:not(:last-child) {
   border-bottom: 1px solid #c4c4c4;
 }
-.main-menu-link{
+.main-menu-link {
   display: inline-block;
   padding: 1em 0.5em;
 }
-.main-menu-link::before{
-  content:'';
+.main-menu-link::before {
+  content: "";
   display: inline-block;
   width: 3px;
   height: 10px;
   margin-right: 0.25rem;
 }
-.main-menu-link:hover::before{
+.main-menu-link:hover::before {
   background-color: #8b8c4a;
 }
 
 @media screen and (min-width: 768px) {
-  .header{
+  .header {
     padding: 1.22rem;
   }
   .burger {
     display: none;
   }
-  .main-menu{
+  .main-menu {
     width: 100%;
     padding: 0;
     background-color: transparent;
     font-size: 1.1rem;
     text-align: right;
     /* Возвращаем position назад */
-    position: static; 
+    position: static;
   }
-  .main-menu-item{
+  .main-menu-item {
     display: inline-block;
   }
-  .main-menu-item:not(:last-child){
+  .main-menu-item:not(:last-child) {
     border-bottom: none;
   }
-  .main-menu-link::before{
+  .main-menu-link::before {
     width: 4px;
     height: 15px;
   }

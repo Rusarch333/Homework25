@@ -4,7 +4,7 @@
 .review * {
   font-size: 0.88rem;
 }
-.review-container{
+.review-container {
   position: relative;
 }
 .review-comma-decoration {
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
   .review {
     background-image: url(./../icons/leaf-right.png);
     background-repeat: no-repeat;

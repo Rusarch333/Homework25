@@ -1,10 +1,10 @@
-.recommendations{
+.recommendations {
   --recommendation-image-size: 100px;
   --recommendation-image-margin-right: 0.81rem;
 
   background-color: var(--color-green-yellow);
 }
-.recommendations-header{
+.recommendations-header {
   color: var(--color-green-superdark);
 }
 .recommendations-flexbox {
@@ -22,11 +22,14 @@
   width: var(--recommendation-image-size);
   height: var(--recommendation-image-size);
 }
-.recommendation-container{
+.recommendation-container {
   /* display: inline-flex; */
   /* flex-direction: column; */
   /* justify-content: space-between; */
-  width: calc(100% - var(--recommendation-image-size) - var(--recommendation-image-margin-right));
+  width: calc(
+    100% - var(--recommendation-image-size) -
+      var(--recommendation-image-margin-right)
+  );
 }
 .recommendation-text {
   display: block;
@@ -51,7 +54,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .recommendations{
+  .recommendations {
     --recommendation-image-size: 120px;
   }
   .recommendations-flexbox {

@@ -2,7 +2,7 @@
   background-color: var(--color-green);
 }
 /* Специально увеличил вес селектора */
-.about-ana .about-ana-content{
+.about-ana .about-ana-content {
   padding-right: 0;
   position: relative;
 }
@@ -28,7 +28,7 @@
   .about-ana-container {
     position: relative;
   }
-  .about-ana .about-ana-content{
+  .about-ana .about-ana-content {
     padding-right: 0;
     position: static;
   }
@@ -43,7 +43,7 @@
   .about-ana-picture {
     width: 487px;
     height: 730px;
-    top:auto;
+    top: auto;
     bottom: -112px;
     right: -107px;
   }

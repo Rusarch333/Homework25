@@ -1,4 +1,4 @@
-.clients{
+.clients {
   --client-image-size: 70px;
 
   padding-bottom: 7.5rem;
@@ -48,7 +48,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .clients{
+  .clients {
     --client-image-size: 120px;
     padding-top: 6.67rem;
     padding-bottom: 12.9rem;
