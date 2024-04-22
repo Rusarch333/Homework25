@@ -6,7 +6,7 @@
   padding-right: 0;
   position: relative;
 }
-.about-ana-header {
+.about-ana-heading {
   margin-bottom: 0.7rem;
 }
 .about-ana-text {
@@ -32,7 +32,7 @@
     padding-right: 0;
     position: static;
   }
-  .about-ana-header {
+  .about-ana-heading {
     margin-bottom: 1.11rem;
     font-size: 4.44rem;
     line-height: 1;

@@ -3,7 +3,7 @@
 
   padding-bottom: 7.5rem;
 }
-.clients-header {
+.clients-heading {
   margin-bottom: 0;
   text-align: left;
 }
@@ -13,7 +13,7 @@
   color: var(--color-green);
   font-size: 1.13rem;
 }
-.clients-header,
+.clients-heading,
 .clients-text {
   text-align: left;
 }
@@ -53,12 +53,12 @@
     padding-top: 6.67rem;
     padding-bottom: 12.9rem;
   }
-  .clients-header,
+  .clients-heading,
   .clients-text {
     text-align: center;
   }
   /* Если использование <br> норма !????????????????????????????? */
-  .clients-header {
+  .clients-heading {
     line-height: 1;
   }
   .clients-content-container {
