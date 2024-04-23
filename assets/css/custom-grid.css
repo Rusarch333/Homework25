@@ -32,9 +32,9 @@
   flex-wrap: wrap;
   /* В испекторе не очевидный отступ и меню не от туда начинаем, можно убрать и попправить меню ?????????????????????????????????????????????????????????*/
   /* Remove left gap from first row element */
-  margin-left: calc(var(--padding-size) * -1);
+  /* margin-left: calc(var(--padding-size) * -1); */
   /* Remove right gap from last row element */
-  margin-right: calc(var(--padding-size) * -1);
+  /* margin-right: calc(var(--padding-size) * -1); */
 }
 .row > * {
   --row-children-horizontal-margin: 0;
@@ -125,10 +125,10 @@
     padding-right: var(--container-576px-horizontal-padding);
   }
   .col-sm-1 {
-    --size: calc(100% / var(--col-amount) * 1); /*8.33%*/
+    --size: calc(100% / var(--col-amount) * 1); /* 8.33% */
   }
   .col-sm-2 {
-    --size: calc(100% / var(--col-amount) * 2); /*16.66*/
+    --size: calc(100% / var(--col-amount) * 2); /* 16.66% */
   }
   .col-sm-3 {
     --size: calc(100% / var(--col-amount) * 3);
@@ -190,10 +190,10 @@
     max-width: var(--bs-breakpoint-md);
   }
   .col-md-1 {
-    --size: calc(100% / var(--col-amount) * 1); /*8.33%*/
+    --size: calc(100% / var(--col-amount) * 1);
   }
   .col-md-2 {
-    --size: calc(100% / var(--col-amount) * 2); /*16.66*/
+    --size: calc(100% / var(--col-amount) * 2);
   }
   .col-md-3 {
     --size: calc(100% / var(--col-amount) * 3);

@@ -26,6 +26,9 @@ ul,
 figure {
   margin: 0;
 }
+pre {
+  font: inherit;
+}
 button {
   /* border-width: 1px; */
   border: 1px solid black; /* Не все границы по-умолчанию стоят:*/
