@@ -4,7 +4,8 @@
   background-color: var(--default-section-color);
 }
 .header-container{
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 .page-nav {
   text-align: right;
