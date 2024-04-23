@@ -10,6 +10,9 @@
 .service:last-of-type {
   margin-bottom: 0;
 }
+.service-heading {
+  margin-right: 0.25rem;
+}
 .service-heading-tip {
   margin: -0.94rem 0 0.69rem;
   font-size: 0.88rem;
@@ -91,9 +94,6 @@
 
 @media screen and (min-width: 768px) {
   .service {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 3.33rem 2.28rem;
   }
   .service:nth-of-type(3) {
@@ -106,19 +106,44 @@
   .service-dropdown-style-button {
     font-size: 0.89rem;
   }
-  .service-dropdown-style-button {
-    padding-right: 173px;
+  .service-description {
+    /* ОТРЕДАЧИТЬ ОТСТУП !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    margin-right: 3.5rem;
   }
+  .service:nth-of-type(3) .service-description {
+    margin-right: 2.5rem;
+  }
+  .service-dropdown-style-button {
+    margin-top: 1.67rem;
+    margin-bottom: 0;
+    padding-right: 9.61rem;
+  }
+  /* Подняли вес селектора */
+  .service .service-como-funciona {
+    margin-top: 2.22rem;
+  }
+  .service-dropdown-style-button ~ .service-dropdown-style-button{
+    margin-top: 0.67rem;
+  } 
   .service-buttons-flexblock {
     display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.67rem;
   }
-  .service-buttons-flexblock > * {
-    width: 45%;
+   /* Подняли вес селектора */  
+  .service .service-buttons-flexblock > * {
+    width: 47%;
+    margin: 0;
+  }
+  .service-portfolio-button {
+    margin-top: 2.22rem;
   }
   .service-check-button {
-    height: 57px;
+    margin-top: 2.22rem;
   }
-  .service-portfolio-button + .service-check-button {
-    margin-top: 0;
+  .service-portfolio-button,
+  .service-check-button {
+    height: 57px;
   }
 }
