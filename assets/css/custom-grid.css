@@ -37,11 +37,14 @@
   margin-right: calc(var(--padding-size) * -1);
 }
 .row > * {
+  --row-children-horizontal-margin: 0;
+
   /* Gaps */
   padding-left: var(--padding-size);
   padding-right: var(--padding-size);
-  margin-left: 0;
-  margin-right: 0;
+  /* ?????????????????? margin ?????????????????? */
+  margin-left: var(--row-children-horizontal-margin);
+  margin-right: var(--row-children-horizontal-margin);
 }
 /* Можно так вместо марджинов????? Так гораздо лучше! */
 /* .row > :not(.hidden):first-child {
@@ -115,9 +118,11 @@
 /* Why we need col-sm-* col-md-* e.t.c. if we have SAME (!!!) col-* already ????????????????????????????????????????????????????????? */
 @media screen and (min-width: 576px) {
   .container {
+    --container-576px-horizontal-padding: 0;
+
     max-width: var(--bs-breakpoint-sm);
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: var(--container-576px-horizontal-padding);
+    padding-right: var(--container-576px-horizontal-padding);
   }
   .col-sm-1 {
     --size: calc(100% / var(--col-amount) * 1); /*8.33%*/

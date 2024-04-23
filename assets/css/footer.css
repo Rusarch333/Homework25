@@ -2,8 +2,10 @@ footer {
   padding: 2.5rem 0;
 }
 .footer-contact-menu-link {
-  width: 30px;
-  height: 30px;
+  --footer-contact-menu-link-size: 30px;
+
+  width: var(--footer-contact-menu-link-size);
+  height: var(--footer-contact-menu-link-size);
 }
 .copyright {
   padding-top: 1.25rem;
@@ -25,8 +27,7 @@ footer {
     margin-right: 1.11rem;
   }
   .footer-contact-menu-link {
-    width: 40px;
-    height: 40px;
+    --footer-contact-menu-link-size: 40px;
   }
   .copyright {
     padding-top: 1.18rem;

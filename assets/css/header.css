@@ -8,10 +8,12 @@
   position: relative;
 }
 .burger {
+  --burder-size: 23px;
+
   display: inline-block;
   /* A little bit more then in figma layout becouse it's uncorrect value in figma if you zoom in it */
-  width: 23px;
-  height: 23px;
+  width: var(--burder-size);
+  height: var(--burder-size);
   background-image: url(./../icons/menu.svg);
   background-repeat: no-repeat;
   background-size: cover;

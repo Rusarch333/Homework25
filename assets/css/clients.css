@@ -55,11 +55,16 @@
   }
   .clients-heading,
   .clients-text {
+    margin: auto;
     text-align: center;
   }
   /* Если использование <br> норма !????????????????????????????? */
   .clients-heading {
+    margin-bottom: 0.44rem;
     line-height: 1;
+  }
+  .clients-text {
+    margin-bottom: 3.33rem;
   }
   .clients-content-container {
     width: 800px;

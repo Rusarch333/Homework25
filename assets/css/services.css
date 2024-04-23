@@ -37,7 +37,7 @@
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: 0.81rem;
+  right: 0.8rem;
   transform: translateY(-50%);
 }
 /* Исправить код ниже чтобы заработал и где-то еще лест чайлд писал
@@ -58,10 +58,12 @@
   text-transform: uppercase;
 }
 .service-portfolio-button:before {
+  --service-portfolion-button-size: 22px;
+
   content: url(./../icons/behance-white.svg);
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: var(--service-portfolion-button-size);
+  height: var(--service-portfolion-button-size);
   margin-right: 0.44rem;
   vertical-align: bottom;
 }
@@ -92,8 +94,10 @@
     padding: 3.33rem 2.28rem;
   }
   .service:nth-of-type(3) {
-    padding-left: 4.44rem;
-    padding-right: 4.44rem;
+    --service-nth-3-horizontal-padding: 4.44rem;
+
+    padding-left: var(--service-nth-3-horizontal-padding);
+    padding-right: var(--service-nth-3-horizontal-padding);
   }
   .service-heading-tip,
   .service-dropdown-style-button {
