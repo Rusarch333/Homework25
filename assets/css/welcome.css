@@ -1,14 +1,15 @@
 .welcome {
-  padding-top: 2.5rem;
+  align-items: center;
+  padding-top: 0;
   padding-bottom: 0;
   background-color: var(--color-green-light);
 }
+.welcome-container {
+  display: inline-flex;
+  padding-right: 0;
+}
 .welcome-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
-  padding-bottom: 2.94rem;
+  margin-top: 6rem;
 }
 .welcome-heading {
   /* margin-top: 6rem; */
@@ -21,13 +22,15 @@
   color: var(--color-green);
   font-size: 0.75rem;
 }
+/* РАЗОБРАТЬСЯ КУДА ЧТО ПРОПИСЫВАТЬ В ПИКЧЮР ИЛИ ИМЕДЖ */
 .welcome-ana-picture {
-  display: block;
-  width: 183px;
-  height: 302px;
+  margin-top: 2.5rem;
 }
-.welcome-photo-ana {
-  height: 100%;
+.welcome-ana-picture > img {
+  display: block; 
+  width: 158px;
+  height: 250px;
+  margin-right: 0.31rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,9 +40,9 @@
   .welcome-text {
     font-size: 1.56rem;
   }
-  .welcome-ana-picture {
-    width: 453px;
-    height: 603px;
+  .welcome-ana-picture > img {
+    width: 390px;
+    height: 582px;
   }
 }
 
