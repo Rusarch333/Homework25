@@ -1,4 +1,5 @@
 .recommendations {
+  --gap-size: 0.4rem;
   --recommendation-image-size: 100px;
 
   background-color: var(--color-green-yellow);
