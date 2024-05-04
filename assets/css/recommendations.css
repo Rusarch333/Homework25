@@ -6,11 +6,11 @@
 .recommendations-heading {
   color: var(--color-green-superdark);
 }
-.recommendations-flexbox {
+/* .recommendations-flexbox {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
+} */
 .recommendation {
   display: inline-flex;
   flex-wrap: wrap;
@@ -60,10 +60,10 @@
   .recommendations {
     --recommendation-image-size: 120px;
   }
-  .recommendations-flexbox {
+  /* .recommendations-flexbox {
     flex-direction: row;
     justify-content: space-between;
-  }
+  } */
   .recommendation-picture {
     --recommendation-image-size: 120px;
   }

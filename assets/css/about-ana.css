@@ -1,9 +1,7 @@
 .about-ana {
   background-color: var(--color-green);
 }
-/* Специально увеличил вес селектора */
-.about-ana .about-ana-content {
-  padding-right: 0;
+.row-about-ana {
   position: relative;
 }
 .about-ana-heading {
