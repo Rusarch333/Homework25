@@ -5,8 +5,8 @@
 
   --container-padding-size: 1rem;
   /* Default gap like in browsers */
-  --gap-size: 1rem;
-  /* --gap-size: 1.25rem; */
+  /* --gap-size: 1rem; */
+  --gap-size: 1.25rem;
   --col-amount: 12;
   /* From Bootstrap standard layout */
   --bs-breakpoint-xs: 0;
@@ -29,11 +29,11 @@
   margin: auto;
 }
 .row {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   /* В испекторе не очевидный отступ и меню не от туда начинаем, можно убрать и попправить меню ?????????????????????????????????????????????????????????*/
   /* Remove left gap from first row element */
-  margin-left: calc(var(--padding-size) * -1);
+  /* margin-left: calc(var(--padding-size) * -1); */
   /* Remove right gap from last row element */
   /* margin-right: calc(var(--padding-size) * -1); */
 }
