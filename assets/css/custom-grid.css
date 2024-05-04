@@ -90,7 +90,7 @@
   --size: calc(100% / var(--col-amount) * 11 - var(--gap-size));
 }
 .col-12 {
-  --size: calc(100% / var(--col-amount) * 12 - var(--gap-size));
+  --size: calc(100% / var(--col-amount) * 12);
 }
 .col-1,
 .col-2,
@@ -160,7 +160,7 @@
     --size: calc(100% / var(--col-amount) * 11 - var(--gap-size));
   }
   .col-sm-12 {
-    --size: calc(100% / var(--col-amount) * 12 - var(--gap-size));
+    --size: calc(100% / var(--col-amount) * 12);
   }
   .col-sm-1,
   .col-sm-2,
@@ -225,7 +225,7 @@
     --size: calc(100% / var(--col-amount) * 11 - var(--gap-size));
   }
   .col-md-12 {
-    --size: calc(100% / var(--col-amount) * 12 - var(--gap-size));
+    --size: calc(100% / var(--col-amount) * 12);
   }
   .col-md-1,
   .col-md-2,
@@ -290,7 +290,7 @@
     --size: calc(100% / var(--col-amount) * 11 - var(--gap-size));
   }
   .col-lg-12 {
-    --size: calc(100% / var(--col-amount) * 12 - var(--gap-size));
+    --size: calc(100% / var(--col-amount) * 12);
   }
   .col-lg-1,
   .col-lg-2,
