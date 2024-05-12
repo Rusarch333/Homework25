@@ -2,10 +2,7 @@
   --layout-min-row-width: 375px;
   --layout-max-row-width: 940px;
   --layout-max-transition-width: 1440px; /* Где лучше применить ?????????????????? */
-
   --container-padding-size: 1rem;
-  /* Default gap like in browsers */
-  /* --gap-size: 1rem; */
   --gap-size: 1.25rem;
   --col-amount: 12;
   /* From Bootstrap standard layout */
@@ -17,13 +14,9 @@
   --bs-breakpoint-xxl: 1400px;
 }
 .container {
-  /* Padding from left and from right in main container with content */
-  --padding-size: calc(var(--gap-size) / 2);
-
   width: 100%;
   /* From our mobile figma layout */
   min-width: var(--layout-min-row-width);
-  /* Left-right container paddings for our mobile-first figma layout*/
   padding-left: var(--container-padding-size);
   padding-right: var(--container-padding-size);
   margin: auto;
@@ -31,36 +24,12 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* В испекторе не очевидный отступ и меню не от туда начинаем, можно убрать и попправить меню ?????????????????????????????????????????????????????????*/
-  /* Remove left gap from first row element */
-  /* margin-left: calc(var(--padding-size) * -1); */
-  /* Remove right gap from last row element */
-  /* margin-right: calc(var(--padding-size) * -1); */
 }
-.row > * {
-  --row-children-horizontal-margin: 0;
-
-  /* Gaps */
-  /* padding-left: var(--padding-size); */
-  /* padding-right: var(--padding-size); */
-  /* ?????????????????? margin ?????????????????? */
-  /* margin-left: var(--row-children-horizontal-margin); */
-  /* margin-right: var(--row-children-horizontal-margin); */
-  /* margin: 0 auto; */
-}
-/* Можно так вместо марджинов????? Так гораздо лучше! */
-/* .row > :not(.hidden):first-child {
-  padding-left: 0;
-}
-.row > :not(.hidden):only-child, 
-.row > :not(.hidden):last-child {
-  padding-right: 0;
-} */
 .col-1 {
-  --size: calc(100% / var(--col-amount) * 1 - var(--gap-size)); /*8.33%*/
+  --size: calc(100% / var(--col-amount) * 1 - var(--gap-size));
 }
 .col-2 {
-  --size: calc(100% / var(--col-amount) * 2 - var(--gap-size)); /*16.66*/
+  --size: calc(100% / var(--col-amount) * 2 - var(--gap-size));
 }
 .col-3 {
   --size: calc(100% / var(--col-amount) * 3 - var(--gap-size));
@@ -105,7 +74,7 @@
 .col-11,
 .col-12 {
   width: var(--size);
-  max-width: var(--size);
+  max-width: var(--size); /* ???????????????????????????????????????? */
 }
 .hidden {
   display: none;
@@ -117,7 +86,6 @@
 /* Media Section */
 
 /* We need it ????????????????????????????????????????????????????????? */
-/* Why we need col-sm-* col-md-* e.t.c. if we have SAME (!!!) col-* already ????????????????????????????????????????????????????????? */
 @media screen and (min-width: 576px) {
   .container {
     --container-576px-horizontal-padding: 0;
@@ -127,10 +95,10 @@
     padding-right: var(--container-576px-horizontal-padding);
   }
   .col-sm-1 {
-    --size: calc(100% / var(--col-amount) * 1 - var(--gap-size)); /* 8.33% */
+    --size: calc(100% / var(--col-amount) * 1 - var(--gap-size));
   }
   .col-sm-2 {
-    --size: calc(100% / var(--col-amount) * 2 - var(--gap-size)); /* 16.66% */
+    --size: calc(100% / var(--col-amount) * 2 - var(--gap-size));
   }
   .col-sm-3 {
     --size: calc(100% / var(--col-amount) * 3 - var(--gap-size));
@@ -174,7 +142,6 @@
   .col-sm-10,
   .col-sm-11,
   .col-sm-12 {
-    /* --size variable is declared locally in every class by prev selector and different for every selector, so we just use that variable to set width */
     width: var(--size);
     max-width: var(--size); /* ???????????????????????????????????????? */
   }
@@ -305,7 +272,7 @@
   .col-lg-11,
   .col-lg-12 {
     width: var(--size);
-    max-width: var(--size);
+    max-width: var(--size); /* ???????????????????????????????????????? */
   }
   .hidden-lg {
     display: none;
