@@ -12,11 +12,14 @@
   color: var(--color-green-light);
 }
 .about-ana-picture {
-  width: 124px;
-  height: 156px;
   position: absolute;
   top: -130px;
   right: 30px;
+}
+.about-ana-picture > img {
+  display: block;
+  width: 124px;
+  height: 156px;
 }
 
 @media screen and (min-width: 768px) {
@@ -26,8 +29,7 @@
   .about-ana-container {
     position: relative;
   }
-  .about-ana .about-ana-content {
-    padding-right: 0;
+  .about-ana {
     position: static;
   }
   .about-ana-heading {
@@ -39,10 +41,12 @@
     font-size: 1.11rem;
   }
   .about-ana-picture {
-    width: 487px;
-    height: 730px;
     top: auto;
     bottom: -112px;
     right: -107px;
+  }
+  .about-ana-picture > img {
+    width: 487px;
+    height: 730px;
   }
 }
