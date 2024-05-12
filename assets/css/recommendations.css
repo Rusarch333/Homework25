@@ -24,7 +24,7 @@
   flex: 1 1 auto;
 } */
 .recommendation-picture {
-   flex-shrink: 0;
+  flex-shrink: 0;
   width: var(--recommendation-image-size);
   height: var(--recommendation-image-size);
   margin-right: 0.81rem;
