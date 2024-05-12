@@ -115,7 +115,7 @@
     padding-right: 9.61rem;
   }
   /* Подняли вес селектора */
-  .services-service .service-como-funciona {
+  .services-service .service-button-como-funciona {
     margin-top: 2.22rem;
   }
   .service-button-dropdown-style ~ .service-button-dropdown-style {
