@@ -103,8 +103,7 @@
     font-size: 0.89rem;
   }
   .service-description {
-    /* ОТРЕДАЧИТЬ ОТСТУП !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    margin-right: 3.5rem;
+    margin-right: 1.52rem;
   }
   .services-service:nth-of-type(3) .service-description {
     margin-right: 2.5rem;
@@ -114,7 +113,11 @@
     margin-bottom: 0;
     padding-right: 9.61rem;
   }
-  /* Подняли вес селектора */
+  /* 
+    Підняли вагу селектора, дизайнер вирішив надати відмінний відступ,
+    для цієї кнопки (щоб між собою трохи порівняти кнопки 2 сервісів 
+    через різну висоту контенту), що на мою думку є НЕ правильним!
+   */
   .services-service .service-button-como-funciona {
     margin-top: 2.22rem;
   }
