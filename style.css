@@ -1,7 +1,7 @@
 :root {
   --section-vertical-padding: 4.5rem;
 
-  /* Variables colors */
+  /* Variables - Colors */
   --default-section-color: #f5efeb;
   --color-green-superdark: #0e2715;
   --color-green-dark: #1a3923;
@@ -27,8 +27,7 @@ h1,
 h2,
 h3 {
   font-family: "Yeseva One", serif;
-  /* Это ж вроде с гугла взято и у неё это есть и работает, а мне ток мешает, почему ?????????????????????????????????????????????????????????*/
-  /* font-weight: 400; */
+  font-weight: 400;
   font-style: normal;
 }
 h1 {
@@ -50,16 +49,19 @@ button {
 }
 
 /* General Classes Section */
-
-.main-space-between {
+/* - */
+.main-space-between { 
   justify-content: space-between;
 }
+/* - */
 .cross-center {
   align-items: center;
 }
+/* - */
 .text-align-center {
   text-align: center;
 }
+/* - */
 .color-green {
   color: var(--color-green);
 }
@@ -72,7 +74,7 @@ button {
   min-height: 100vh;
 }
 .main {
-  flex: 1 0 auto;
+  flex-grow: 1;
 }
 
 /* Media Section */
