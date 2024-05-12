@@ -1,23 +1,23 @@
 :root {
   --layout-min-row-width: 375px;
   --layout-max-row-width: 940px;
-  --layout-max-transition-width: 1440px; /* Где лучше применить ?????????????????? */
+  /* --layout-max-width: 1440px; */
   --container-padding-size: 1rem;
   --gap-size: 1.25rem;
   --col-amount: 12;
-  /* From Bootstrap standard layout */
+  /* From Bootstrap: */
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
+  /* В boostrap 992px, але у нас буде 940 по макету */
   --bs-breakpoint-lg: var(
     --layout-max-row-width
-  ); /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
+  ); 
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
 }
 .container {
   width: 100%;
-  /* From our mobile figma layout */
   min-width: var(--layout-min-row-width);
   padding-left: var(--container-padding-size);
   padding-right: var(--container-padding-size);
@@ -76,7 +76,6 @@
 .col-11,
 .col-12 {
   width: var(--size);
-  max-width: var(--size); /* ???????????????????????????????????????? */
 }
 .hidden {
   display: none;
@@ -145,7 +144,6 @@
   .col-sm-11,
   .col-sm-12 {
     width: var(--size);
-    max-width: var(--size); /* ???????????????????????????????????????? */
   }
   .hidden-sm {
     display: none;
@@ -209,7 +207,6 @@
   .col-md-11,
   .col-md-12 {
     width: var(--size);
-    max-width: var(--size);
   }
   .hidden-md {
     display: none;
@@ -219,9 +216,7 @@
   }
 }
 
-/* Try to input variable here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-@media screen and (min-width: 992px) {
-  /* Limit max-width of container */
+@media screen and (min-width: 940px) {
   .container {
     max-width: var(--bs-breakpoint-lg);
   }
@@ -274,7 +269,6 @@
   .col-lg-11,
   .col-lg-12 {
     width: var(--size);
-    max-width: var(--size); /* ???????????????????????????????????????? */
   }
   .hidden-lg {
     display: none;
