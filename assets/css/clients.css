@@ -24,10 +24,10 @@
   width: 290px;
   margin: auto;
 }
-.client {
+.clients-client {
   margin-right: 2.5rem;
 }
-.client:nth-of-type(3n) {
+.clients-client:nth-of-type(3n) {
   margin-right: 0;
 }
 .client-picture,
@@ -37,19 +37,19 @@
 }
 .client-picture {
   height: var(--client-image-size);
-  margin: auto;
   margin-bottom: 0.31rem;
 }
 .client-caption {
   margin-bottom: 1.11rem;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .clients {
     --client-image-size: 120px;
+
     padding-top: 6.67rem;
     padding-bottom: 12.9rem;
   }
@@ -58,31 +58,17 @@
     margin: auto;
     text-align: center;
   }
-  /* Если использование <br> норма !????????????????????????????? */
-  .clients-heading {
-    margin-bottom: 0.44rem;
-    line-height: 1;
-  }
   .clients-text {
     margin-bottom: 3.33rem;
-  }
-  .clients-content-container {
-    width: 800px;
-  }
-  .clients-text {
     font-size: 1.11rem;
   }
   .clients-content-container {
     justify-content: center;
+    width: 800px;
   }
-  .client,
-  .client:nth-of-type(3n) {
+  .clients-client,
+  .clients-client:nth-of-type(3n) {
     margin-right: 2.22rem;
-  }
-  /* Плохой код ?????????????????????????????????????? */
-  .client:nth-of-type(5),
-  .client:nth-of-type(9) {
-    margin-right: 0;
   }
   .client-picture {
     margin-bottom: 0.44rem;
