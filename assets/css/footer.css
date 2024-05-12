@@ -11,7 +11,8 @@ footer {
   padding-top: 1.25rem;
   color: var(--color-green);
   font-size: 0.63rem;
-  font-weight: 400;
+  font-weight: 300;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,12 +20,12 @@ footer {
     padding: 2.11rem 0;
   }
   .footer-logo {
-    /* margin-left: 3.93rem; */
     font-size: 1.78rem;
     line-height: 1.1;
   }
-  .contact-menu-item {
-    margin-right: 1.11rem;
+  .footer-contact-menu {
+    display: flex;
+    justify-content: flex-end;
   }
   .footer-contact-menu-link {
     --footer-contact-menu-link-size: 40px;

@@ -2,11 +2,6 @@
   text-transform: lowercase;
   line-height: 1.1;
 }
-.logo > b {
-  display: block;
-  font-weight: 700;
-}
-
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 1.1rem;

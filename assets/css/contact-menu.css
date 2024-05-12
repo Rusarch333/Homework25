@@ -11,7 +11,7 @@
   display: block;
   width: var(--contact-menu-link-size);
   height: var(--contact-menu-link-size);
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .email {
@@ -31,6 +31,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contact-menu-item {
+    margin-right: 1.11rem;
+  }
   .contact-menu-link {
     width: 44px;
     height: 44px;

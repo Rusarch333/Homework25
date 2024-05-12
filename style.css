@@ -50,21 +50,11 @@ button {
 
 /* General Classes Section */
 
-/* - */
 .main-space-between { 
   justify-content: space-between;
 }
-/* - */
 .cross-center {
   align-items: center;
-}
-/* - */
-.text-align-center {
-  text-align: center;
-}
-/* - */
-.color-green {
-  color: var(--color-green);
 }
 
 /* Local Section */

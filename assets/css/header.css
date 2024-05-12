@@ -3,10 +3,6 @@
   color: #0e2715;
   background-color: var(--default-section-color);
 }
-.header-container{
-  display: flex;
-  justify-content: space-between;
-}
 .page-nav {
   text-align: right;
   position: relative;
@@ -15,17 +11,20 @@
   --burder-size: 23px;
 
   display: inline-block;
-  /* A little bit more then in figma layout becouse it's uncorrect value in figma if you zoom in it */
+  /* 
+    A little bit more then in figma layout becouse it's uncorrect 
+    value in figma if you zoom in it 
+  */
   width: var(--burder-size);
   height: var(--burder-size);
   background-image: url(./../icons/menu.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   cursor: pointer;
 }
 .main-menu {
-  width: 140px;
-  padding: 1.19rem 0.75rem 1.13rem;
+  width: 141px;
+  padding: 1.19rem 0.75rem 0.73rem;
   background-color: #fff;
   font-size: 0.88rem;
   text-align: left;
@@ -40,9 +39,10 @@
 }
 .main-menu-link {
   display: inline-block;
-  padding: 1rem 0.5rem;
+  padding: 0.625rem 0.5rem;
 }
 .main-menu-link::before {
+  /* Лінія активного лінка, яка завдається через колір бекграунду */
   content: "";
   display: inline-block;
   width: 3px;
@@ -66,7 +66,7 @@
     background-color: transparent;
     font-size: 1.1rem;
     text-align: right;
-    /* Возвращаем position назад */
+    /* Повертаємо position назад */
     position: static;
   }
   .main-menu-item {
@@ -76,6 +76,7 @@
     border-bottom: none;
   }
   .main-menu-link::before {
+    /* Лінія активного лінка, яка завдається через колір бекграунду */
     width: 4px;
     height: 15px;
   }
