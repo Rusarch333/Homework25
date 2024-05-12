@@ -4,7 +4,6 @@
   background-color: var(--color-green-light);
 }
 .welcome-container {
-  display: flex;
   padding-right: 0.31rem;
 }
 .welcome-content {
@@ -26,6 +25,23 @@
   display: block;
   width: 158px;
   height: 250px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 576px) {
+  .welcome-content {
+    margin-top: 8rem;
+  }
+  .welcome-heading {
+    font-size: 4.3rem;
+  }
+  .welcome-text {
+    font-size: 1.26rem;
+  }
+  .welcome-ana-picture > img {
+    width: 250px;
+    height: 373px;
+  }
 }
 
 @media screen and (min-width: 768px) {

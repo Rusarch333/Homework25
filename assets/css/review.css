@@ -47,6 +47,11 @@
   .review-text-content * {
     font-size: 1rem;
   }
+  .review-comma-decoration {
+    width: 105px;
+    height: 200px;
+    top: -120px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -55,10 +60,5 @@
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 85%;
-  }
-  .review-comma-decoration {
-    width: 105px;
-    height: 200px;
-    top: -120px;
   }
 }

@@ -80,6 +80,7 @@
   margin-top: 0.5rem;
 }
 
+
 @media screen and (min-width: 768px) {
   .services-service {
     padding: 3.33rem 2.28rem;
@@ -127,6 +128,10 @@
   .service-button-check {
     height: 57px;
   }
+  .service-button-portfolio:before,
+  .service-button-check:before {
+    display: none;
+  }
   .service-buttons-flex-container {
     display: inline-flex;
     justify-content: space-between;
@@ -143,5 +148,9 @@
 @media screen and (min-width: 940px) {
   .service-button-dropdown-style {
     padding-right: 9.61rem;
+  }
+  .service-button-portfolio:before,
+  .service-button-check:before {
+    display: inline-block;
   }
 }
