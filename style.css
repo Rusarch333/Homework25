@@ -20,7 +20,9 @@
 
 /* General Tags Section */
 
-header, section, footer {
+header,
+section,
+footer {
   background-color: var(--default-section-color);
 }
 section {
@@ -53,7 +55,7 @@ button {
 
 /* General Classes Section */
 
-.main-space-between { 
+.main-space-between {
   justify-content: space-between;
 }
 .cross-center {

@@ -7,7 +7,7 @@
 }
 .contact-menu-link {
   --contact-menu-link-size: 24px;
-  
+
   display: block;
   width: var(--contact-menu-link-size);
   height: var(--contact-menu-link-size);

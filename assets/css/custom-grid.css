@@ -9,7 +9,9 @@
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
   --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: var(--layout-max-row-width); /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
+  --bs-breakpoint-lg: var(
+    --layout-max-row-width
+  ); /* 992 bstrp. 940 - макс размер нашего макета. 940 - ?????????*/
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
 }

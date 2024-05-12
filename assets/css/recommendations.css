@@ -61,7 +61,7 @@
 }
 .recommendation-button::before {
   --cursor-size: 13px;
-  
+
   content: url(./../icons/cursor.svg);
   display: inline-block;
   width: var(--cursor-size);
