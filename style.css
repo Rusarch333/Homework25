@@ -50,6 +50,7 @@ h3 {
   font-size: 1.88rem;
 }
 button {
+  border-style: solid;
   font-weight: bold;
 }
 
@@ -75,7 +76,6 @@ button {
 
 /* Media Section */
 
-/* 768px */
 @media screen and (min-width: 768px) {
   :root {
     font-size: 18px;

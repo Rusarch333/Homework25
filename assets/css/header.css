@@ -11,10 +11,6 @@
   --burder-size: 23px;
 
   display: inline-block;
-  /* 
-    A little bit more then in figma layout becouse it's uncorrect 
-    value in figma if you zoom in it 
-  */
   width: var(--burder-size);
   height: var(--burder-size);
   background-image: url(./../icons/menu.svg);
