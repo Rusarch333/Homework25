@@ -44,44 +44,37 @@
   right: 0.8rem;
   transform: translateY(-50%);
 }
-/* Исправить код ниже чтобы заработал! */
-/* .service > .service-button-dropdown-style:last-of-type{
-  margin-bottom: 1.25rem;
-} */
-/* ОПТИМИЗАЦИЯ, ОСОБЕННО ПОХОЖИХ КНОПОК НИЖЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.service-button-portfolio {
+.service-button-portfolio,
+.service-button-check {
   display: block;
   width: 90%;
-  height: 45px;
-  border: 2px solid var(--color-orange);
   margin: 1.25rem auto 0;
   color: #fff;
-  background-color: transparent;
+  height: 45px;
   text-transform: uppercase;
+}
+.service-button-portfolio:before,
+.service-button-check:before {
+  display: inline-block;
+  margin-right: 0.44rem;
+}
+.service-button-portfolio {
+  border: 2px solid var(--color-orange);
+  background-color: transparent;
 }
 .service-button-portfolio:before {
   --service-portfolion-button-size: 22px;
 
   content: url(./../icons/behance-white.svg);
-  display: inline-block;
   width: var(--service-portfolion-button-size);
   height: var(--service-portfolion-button-size);
-  margin-right: 0.44rem;
   vertical-align: bottom;
 }
 .service-button-check {
-  display: block;
-  width: 90%;
-  height: 45px;
-  margin: 1.25rem auto 0;
-  color: #fff;
   background-color: var(--color-orange);
-  text-transform: uppercase;
 }
 .service-button-check:before {
   content: url(./../icons/check.svg);
-  display: inline-block;
-  margin-right: 0.44rem;
 }
 .service-button-portfolio + .service-button-check {
   margin-top: 0.5rem;
@@ -112,27 +105,17 @@
     margin-bottom: 0;
     padding-right: 9.61rem;
   }
-  /* 
-    Підняли вагу селектора, дизайнер вирішив надати відмінний відступ,
-    для цієї кнопки (щоб між собою трохи порівняти кнопки 2 сервісів 
-    через різну висоту контенту), що на мою думку є НЕ правильним!
-   */
-  .services-service .service-button-como-funciona {
-    margin-top: 2.22rem;
-  }
   .service-button-dropdown-style ~ .service-button-dropdown-style {
     margin-top: 0.67rem;
   }
-  .service-buttons-flexblock {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 1.67rem;
-  }
-  /* Подняли вес селектора */
-  .services-service .service-buttons-flexblock > * {
-    width: 47%;
-    margin: 0;
+  /* 
+    Підняли вагу селектора
+    Дизайнер вирішив надати відмінний відступ, для цієї кнопки 
+    (щоб між собою трохи порівняти кнопки 2 сервісів через різну 
+    висоту контенту), що на мою думку є НЕ правильним!
+   */
+   .services-service .service-button-como-funciona {
+    margin-top: 2.22rem;
   }
   .service-button-portfolio {
     margin-top: 2.22rem;
@@ -143,5 +126,16 @@
   .service-button-portfolio,
   .service-button-check {
     height: 57px;
+  }
+  .service-buttons-flex-container {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.67rem;
+  }
+  /* Подняли вес селектора */
+  .services-service .service-buttons-flex-container > * {
+    width: 47%;
+    margin: 0;
   }
 }
