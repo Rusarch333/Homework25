@@ -20,6 +20,9 @@
 
 /* General Tags Section */
 
+header, section, footer {
+  background-color: var(--default-section-color);
+}
 section {
   padding: var(--section-vertical-padding) 0;
 }

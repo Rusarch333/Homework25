@@ -1,4 +1,5 @@
 .logo {
+  color: var(--color-green);
   text-transform: lowercase;
   line-height: 1.1;
 }
