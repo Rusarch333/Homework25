@@ -55,7 +55,7 @@
     --recommendation-image-size: 120px;
   }
   .recommendations-recommendation {
-    margin-right: 3.33rem;
+    margin-right: 0;
   }
   .recommendation-text {
     font-size: 1.11rem;
@@ -63,4 +63,11 @@
   .recommendation-button {
     font-size: 0.78rem;
   }
+}
+
+@media screen and (min-width: 940px) {
+  .recommendations-recommendation {
+    margin-right: 3.33rem;
+  }
+
 }

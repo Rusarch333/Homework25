@@ -90,10 +90,6 @@
     padding-left: var(--service-nth-3-horizontal-padding);
     padding-right: var(--service-nth-3-horizontal-padding);
   }
-  .service-heading-tip,
-  .service-button-dropdown-style {
-    font-size: 0.89rem;
-  }
   .service-description {
     margin-right: 1.52rem;
   }
@@ -103,10 +99,14 @@
   .service-button-dropdown-style {
     margin-top: 1.67rem;
     margin-bottom: 0;
-    padding-right: 9.61rem;
+    padding-right: 4rem;
   }
   .service-button-dropdown-style ~ .service-button-dropdown-style {
     margin-top: 0.67rem;
+  }
+  .service-heading-tip,
+  .service-button-dropdown-style {
+    font-size: 0.89rem;
   }
   /* 
     Підняли вагу селектора
@@ -126,6 +126,7 @@
   .service-button-portfolio,
   .service-button-check {
     height: 57px;
+
   }
   .service-buttons-flex-container {
     display: inline-flex;
@@ -137,5 +138,11 @@
   .services-service .service-buttons-flex-container > * {
     width: 47%;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .service-button-dropdown-style {
+    padding-right: 9.61rem;
   }
 }

@@ -112,7 +112,7 @@
     --size: calc(100% / var(--col-amount) * 6 - var(--gap-size));
   }
   .col-sm-7 {
-    --size: calc(100% / var(--col-amount) * 7) - var(--gap-size);
+    --size: calc(100% / var(--col-amount) * 7 - var(--gap-size));
   }
   .col-sm-8 {
     --size: calc(100% / var(--col-amount) * 8 - var(--gap-size));
