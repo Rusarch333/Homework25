@@ -7,7 +7,7 @@
 .about-ana-heading {
   margin-bottom: 0.7rem;
 }
-.about-ana-text {
+.about-ana-paragraph {
   margin: 0;
   color: var(--color-green-light);
 }
@@ -37,7 +37,7 @@
     font-size: 4.44rem;
     line-height: 1;
   }
-  .about-ana-text {
+  .about-ana-paragraph {
     font-size: 1.11rem;
   }
   .about-ana-picture {
