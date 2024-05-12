@@ -3,11 +3,11 @@
   color: #0e2715;
   background-color: var(--default-section-color);
 }
-.page-nav {
+.header-page-nav {
   text-align: right;
   position: relative;
 }
-.burger {
+.header-burger {
   --burder-size: 23px;
 
   display: inline-block;
@@ -22,7 +22,7 @@
   background-size: contain;
   cursor: pointer;
 }
-.main-menu {
+.header-main-menu {
   width: 141px;
   padding: 1.19rem 0.75rem 0.73rem;
   background-color: #fff;
@@ -31,17 +31,17 @@
   position: absolute;
   right: 0;
 }
-.page-nav:hover > .main-menu {
+.header-page-nav:hover > .header-main-menu {
   display: block;
 }
-.main-menu-item:not(:last-child) {
+.header-main-menu-item:not(:last-child) {
   border-bottom: 1px solid #c4c4c4;
 }
-.main-menu-link {
+.header-main-menu-link {
   display: inline-block;
   padding: 0.625rem 0.5rem;
 }
-.main-menu-link::before {
+.header-main-menu-link::before {
   /* Лінія активного лінка, яка завдається через колір бекграунду */
   content: "";
   display: inline-block;
@@ -49,18 +49,18 @@
   height: 10px;
   margin-right: 0.25rem;
 }
-.main-menu-link:hover::before {
+.header-main-menu-link:hover::before {
   background-color: #8b8c4a;
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .header-header {
     padding: 1.22rem;
   }
-  .burger {
+  .header-burger {
     display: none;
   }
-  .main-menu {
+  .header-main-menu {
     width: 100%;
     padding: 0;
     background-color: transparent;
@@ -69,13 +69,13 @@
     /* Повертаємо position назад */
     position: static;
   }
-  .main-menu-item {
+  .header-main-menu-item {
     display: inline-block;
   }
-  .main-menu-item:not(:last-child) {
+  .header-main-menu-item:not(:last-child) {
     border-bottom: none;
   }
-  .main-menu-link::before {
+  .header-main-menu-link::before {
     /* Лінія активного лінка, яка завдається через колір бекграунду */
     width: 4px;
     height: 15px;

@@ -7,7 +7,7 @@ footer {
   width: var(--footer-contact-menu-link-size);
   height: var(--footer-contact-menu-link-size);
 }
-.copyright {
+.footer-copyright {
   padding-top: 1.25rem;
   color: var(--color-green);
   font-size: 0.63rem;
@@ -30,7 +30,7 @@ footer {
   .footer-contact-menu-link {
     --footer-contact-menu-link-size: 40px;
   }
-  .copyright {
+  .footer-copyright {
     padding-top: 1.18rem;
     font-size: 0.78rem;
   }

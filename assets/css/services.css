@@ -20,7 +20,7 @@
 .service-description {
   margin: 0;
 }
-.service-dropdown-style-button {
+.service-button-dropdown-style {
   display: block;
   width: 100%;
   height: 57px;
@@ -33,10 +33,10 @@
   text-align: left;
   position: relative;
 }
-.service-dropdown-style-button:first-of-type {
+.service-button-dropdown-style:first-of-type {
   margin-top: 1.25rem;
 }
-.service-dropdown-style-button::after {
+.service-button-dropdown-style::after {
   content: url(./../icons/arrow-down.svg);
   display: inline-block;
   position: absolute;
@@ -46,11 +46,11 @@
 }
 /* Исправить код ниже чтобы заработал и где-то еще лест чайлд писал
 в другом коде. там наверное лест оф тайп тоже! */
-/* .service > .service-dropdown-style-button:last-of-type{
+/* .service > .service-button-dropdown-style:last-of-type{
   margin-bottom: 1.25rem;
 } */
 /* ОПТИМИЗАЦИЯ, ОСОБЕННО ПОХОЖИХ КНОПОК НИЖЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.service-portfolio-button {
+.service-button-portfolio {
   display: block;
   width: 90%;
   height: 45px;
@@ -60,7 +60,7 @@
   background-color: transparent;
   text-transform: uppercase;
 }
-.service-portfolio-button:before {
+.service-button-portfolio:before {
   --service-portfolion-button-size: 22px;
 
   content: url(./../icons/behance-white.svg);
@@ -70,7 +70,7 @@
   margin-right: 0.44rem;
   vertical-align: bottom;
 }
-.service-check-button {
+.service-button-check {
   display: block;
   width: 90%;
   height: 45px;
@@ -79,12 +79,12 @@
   background-color: var(--color-orange);
   text-transform: uppercase;
 }
-.service-check-button:before {
+.service-button-check:before {
   content: url(./../icons/check.svg);
   display: inline-block;
   margin-right: 0.44rem;
 }
-.service-portfolio-button + .service-check-button {
+.service-button-portfolio + .service-button-check {
   margin-top: 0.5rem;
 }
 
@@ -99,7 +99,7 @@
     padding-right: var(--service-nth-3-horizontal-padding);
   }
   .service-heading-tip,
-  .service-dropdown-style-button {
+  .service-button-dropdown-style {
     font-size: 0.89rem;
   }
   .service-description {
@@ -109,7 +109,7 @@
   .service:nth-of-type(3) .service-description {
     margin-right: 2.5rem;
   }
-  .service-dropdown-style-button {
+  .service-button-dropdown-style {
     margin-top: 1.67rem;
     margin-bottom: 0;
     padding-right: 9.61rem;
@@ -118,7 +118,7 @@
   .service .service-como-funciona {
     margin-top: 2.22rem;
   }
-  .service-dropdown-style-button ~ .service-dropdown-style-button{
+  .service-button-dropdown-style ~ .service-button-dropdown-style{
     margin-top: 0.67rem;
   } 
   .service-buttons-flexblock {
@@ -132,14 +132,14 @@
     width: 47%;
     margin: 0;
   }
-  .service-portfolio-button {
+  .service-button-portfolio {
     margin-top: 2.22rem;
   }
-  .service-check-button {
+  .service-button-check {
     margin-top: 2.22rem;
   }
-  .service-portfolio-button,
-  .service-check-button {
+  .service-button-portfolio,
+  .service-button-check {
     height: 57px;
   }
 }
