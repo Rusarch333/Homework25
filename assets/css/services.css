@@ -44,8 +44,7 @@
   right: 0.8rem;
   transform: translateY(-50%);
 }
-/* Исправить код ниже чтобы заработал и где-то еще лест чайлд писал
-в другом коде. там наверное лест оф тайп тоже! */
+/* Исправить код ниже чтобы заработал! */
 /* .service > .service-button-dropdown-style:last-of-type{
   margin-bottom: 1.25rem;
 } */

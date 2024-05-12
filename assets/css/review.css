@@ -34,8 +34,8 @@
   background-position-x: center;
   cursor: pointer;
 }
-.review-text-content > p:last-child {
-  padding-bottom: 1.63rem;
+.review-text-content > p:last-of-type {
+  margin-bottom: 0;
 }
 .review-author {
   display: block;
