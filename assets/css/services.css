@@ -1,13 +1,13 @@
 .services {
   color: var(--color-green-light);
 }
-.service {
+.services-service {
   padding: 2.38rem 1.19rem;
   border: 2px solid black;
   margin-bottom: 1.25rem;
   background-color: var(--color-green);
 }
-.service:last-of-type {
+.services-service:last-of-type {
   margin-bottom: 0;
 }
 .service-heading {
@@ -89,10 +89,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .service {
+  .services-service {
     padding: 3.33rem 2.28rem;
   }
-  .service:nth-of-type(3) {
+  .services-service:nth-of-type(3) {
     --service-nth-3-horizontal-padding: 4.44rem;
 
     padding-left: var(--service-nth-3-horizontal-padding);
@@ -106,7 +106,7 @@
     /* ОТРЕДАЧИТЬ ОТСТУП !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     margin-right: 3.5rem;
   }
-  .service:nth-of-type(3) .service-description {
+  .services-service:nth-of-type(3) .service-description {
     margin-right: 2.5rem;
   }
   .service-button-dropdown-style {
@@ -115,7 +115,7 @@
     padding-right: 9.61rem;
   }
   /* Подняли вес селектора */
-  .service .service-como-funciona {
+  .services-service .service-como-funciona {
     margin-top: 2.22rem;
   }
   .service-button-dropdown-style ~ .service-button-dropdown-style {
@@ -128,7 +128,7 @@
     margin-top: 1.67rem;
   }
   /* Подняли вес селектора */
-  .service .service-buttons-flexblock > * {
+  .services-service .service-buttons-flexblock > * {
     width: 47%;
     margin: 0;
   }
