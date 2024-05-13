@@ -30,6 +30,7 @@ figure {
   font: inherit;
 } */
 button {
+  border-width: 1px;
   font-size: inherit;
   cursor: pointer;
 }

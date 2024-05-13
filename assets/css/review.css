@@ -16,9 +16,6 @@
   position: absolute;
   top: -86px;
 }
-.review-text-content * {
-  font-size: 0.88rem;
-}
 .review-arrow-left {
   background-image: url(./../icons/review-arror-left.svg);
 }
@@ -34,6 +31,9 @@
   background-position-x: center;
   cursor: pointer;
 }
+.review-text-content * {
+  font-size: 0.88rem;
+}
 .review-text-content > p:last-of-type {
   margin-bottom: 0;
 }
@@ -44,13 +44,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .review-text-content * {
-    font-size: 1rem;
-  }
   .review-comma-decoration {
     width: 105px;
     height: 200px;
     top: -120px;
+  }
+  .review-text-content * {
+    font-size: 1rem;
   }
 }
 

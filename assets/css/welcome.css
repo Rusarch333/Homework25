@@ -45,10 +45,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .welcome-container {
-    /* ????????????????????? */
-    padding-right: 0;
-  }
   .welcome-content {
     margin-top: 9.67rem;
   }
@@ -64,12 +60,6 @@
   .welcome-ana-picture > img {
     width: 390px;
     height: 582px;
-  }
-}
-
-@media screen and (min-width: 939px) {
-  .welcome-container {
-    /* max-width: var(--bs-breakpoint-md); */
   }
 }
 

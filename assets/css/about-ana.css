@@ -25,12 +25,10 @@
 @media screen and (min-width: 768px) {
   .about-ana {
     padding-bottom: calc(var(--section-vertical-padding) + 1.72rem);
+    position: static;
   }
   .about-ana-container {
     position: relative;
-  }
-  .about-ana {
-    position: static;
   }
   .about-ana-heading {
     margin-bottom: 1.11rem;
